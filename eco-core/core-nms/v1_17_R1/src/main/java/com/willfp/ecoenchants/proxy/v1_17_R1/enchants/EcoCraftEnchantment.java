@@ -1,8 +1,6 @@
 package com.willfp.ecoenchants.proxy.v1_17_R1.enchants;
 
-import com.willfp.ecoenchants.enchantments.EcoEnchant;
 import com.willfp.ecoenchants.enchantments.support.vanilla.VanillaEnchantmentMetadata;
-import com.willfp.ecoenchants.enchantments.util.EnchantmentUtils;
 import net.minecraft.world.item.enchantment.Enchantment;
 import org.bukkit.craftbukkit.v1_17_R1.enchantments.CraftEnchantment;
 import org.jetbrains.annotations.NotNull;

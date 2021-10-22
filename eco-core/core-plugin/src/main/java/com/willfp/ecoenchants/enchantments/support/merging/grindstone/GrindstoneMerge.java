@@ -1,6 +1,5 @@
 package com.willfp.ecoenchants.enchantments.support.merging.grindstone;
 
-import com.willfp.ecoenchants.enchantments.EcoEnchant;
 import lombok.experimental.UtilityClass;
 import org.bukkit.enchantments.Enchantment;
 import org.bukkit.inventory.ItemStack;

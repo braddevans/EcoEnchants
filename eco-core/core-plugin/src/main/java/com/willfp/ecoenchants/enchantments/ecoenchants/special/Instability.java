@@ -1,10 +1,7 @@
 package com.willfp.ecoenchants.enchantments.ecoenchants.special;
 
 import com.willfp.eco.core.integrations.antigrief.AntigriefManager;
-import com.willfp.ecoenchants.enchantments.EcoEnchant;
-import com.willfp.ecoenchants.enchantments.EcoEnchants;
 import com.willfp.ecoenchants.enchantments.meta.EnchantmentType;
-import com.willfp.ecoenchants.enchantments.util.EnchantChecks;
 import org.bukkit.entity.Arrow;
 import org.bukkit.entity.EntityType;
 import org.bukkit.entity.Player;

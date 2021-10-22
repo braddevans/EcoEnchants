@@ -3,7 +3,6 @@ package com.willfp.ecoenchants.enchantments.ecoenchants.spell;
 import com.willfp.eco.core.integrations.anticheat.AnticheatManager;
 import com.willfp.eco.core.integrations.antigrief.AntigriefManager;
 import com.willfp.eco.util.BlockUtils;
-import com.willfp.ecoenchants.enchantments.EcoEnchants;
 import com.willfp.ecoenchants.enchantments.itemtypes.Spell;
 import org.bukkit.Particle;
 import org.bukkit.block.Block;

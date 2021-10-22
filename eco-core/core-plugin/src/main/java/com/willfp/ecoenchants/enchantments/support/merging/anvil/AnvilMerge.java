@@ -2,9 +2,7 @@ package com.willfp.ecoenchants.enchantments.support.merging.anvil;
 
 import com.willfp.eco.core.fast.FastItemStack;
 import com.willfp.eco.util.StringUtils;
-import com.willfp.ecoenchants.EcoEnchantsPlugin;
-import com.willfp.ecoenchants.enchantments.EcoEnchant;
-import com.willfp.ecoenchants.enchantments.EcoEnchants;
+import com.willfp.ecoenchants.EcoEnchantsPluginImpl;
 import com.willfp.ecoenchants.enchantments.meta.EnchantmentTarget;
 import com.willfp.ecoenchants.enchantments.meta.EnchantmentType;
 import lombok.experimental.UtilityClass;
@@ -28,7 +26,7 @@ public class AnvilMerge {
     /**
      * Instance of EcoEnchants.
      */
-    private static final EcoEnchantsPlugin PLUGIN = EcoEnchantsPlugin.getInstance();
+    private static final EcoEnchantsPluginImpl PLUGIN = EcoEnchantsPluginImpl.getInstance();
 
     /**
      * Config key for allowing unsafe levels.

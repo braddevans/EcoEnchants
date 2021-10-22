@@ -5,14 +5,10 @@ import com.willfp.eco.core.command.impl.Subcommand;
 import com.willfp.eco.core.config.interfaces.Config;
 import com.willfp.eco.core.config.yaml.YamlTransientConfig;
 import com.willfp.eco.core.web.Paste;
-import com.willfp.ecoenchants.EcoEnchantsPlugin;
-import com.willfp.ecoenchants.enchantments.EcoEnchant;
-import com.willfp.ecoenchants.enchantments.EcoEnchants;
-import org.bukkit.configuration.file.YamlConfiguration;
+import com.willfp.ecoenchants.EcoEnchantsPluginImpl;
 import org.jetbrains.annotations.NotNull;
 
 import java.io.IOException;
-import java.io.StringReader;
 
 public class CommandLocaleDownload extends Subcommand {
     /**
@@ -20,7 +16,7 @@ public class CommandLocaleDownload extends Subcommand {
      *
      * @param plugin The plugin for the commands to listen for.
      */
-    public CommandLocaleDownload(@NotNull final EcoEnchantsPlugin plugin) {
+    public CommandLocaleDownload(@NotNull final EcoEnchantsPluginImpl plugin) {
         super(plugin, "download", "ecoenchants.command.locale.download", false);
     }
 

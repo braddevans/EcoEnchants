@@ -8,7 +8,7 @@ import com.willfp.eco.core.events.ArmorEquipEvent;
 import com.willfp.eco.core.events.PlayerJumpEvent;
 import com.willfp.eco.core.integrations.antigrief.AntigriefManager;
 import com.willfp.eco.core.integrations.mcmmo.McmmoManager;
-import com.willfp.ecoenchants.EcoEnchantsPlugin;
+import com.willfp.ecoenchants.EcoEnchantsPluginImpl;
 import com.willfp.ecoenchants.enchantments.EcoEnchant;
 import com.willfp.ecoenchants.enchantments.EcoEnchants;
 import org.bukkit.Material;
@@ -55,7 +55,7 @@ public class WatcherTriggers extends PluginDependent<EcoPlugin> implements Liste
      * @param plugin Instance of EcoEnchants.
      */
     @ConfigUpdater
-    public static void update(@NotNull final EcoEnchantsPlugin plugin) {
+    public static void update(@NotNull final EcoEnchantsPluginImpl plugin) {
         allowOnNPC = plugin.getConfigYml().getBool("allow-on-npc");
     }
 

@@ -7,8 +7,6 @@ import com.willfp.eco.core.command.impl.PluginCommand;
 import com.willfp.eco.core.config.updating.ConfigUpdater;
 import com.willfp.eco.util.StringUtils;
 import com.willfp.ecoenchants.display.EnchantmentCache;
-import com.willfp.ecoenchants.enchantments.EcoEnchant;
-import com.willfp.ecoenchants.enchantments.EcoEnchants;
 import com.willfp.ecoenchants.enchantments.meta.EnchantmentRarity;
 import org.apache.commons.lang.WordUtils;
 import org.bukkit.ChatColor;

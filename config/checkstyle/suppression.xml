@@ -5,6 +5,10 @@
         "http://www.puppycrawl.com/dtds/suppressions_1_1.dtd">
 
 <suppressions>
+    <!-- Core doesn't need javadoc -->
+    <suppress files="[\\/]eco-core[\\/]" checks="MissingJavadocMethod"/>
+    <suppress files="[\\/]eco-core[\\/]" checks="JavadocVariable"/>
+
     <!-- Enchantments don't need javadoc. -->
     <suppress files="[\\/]enchantments[\\/]ecoenchants[\\/]" checks="MissingJavadocMethod"/>
     <suppress files="[\\/]enchantments[\\/]ecoenchants[\\/]" checks="JavadocVariable"/>

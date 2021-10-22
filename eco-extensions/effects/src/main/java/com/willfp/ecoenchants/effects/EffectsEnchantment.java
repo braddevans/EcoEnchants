@@ -2,9 +2,7 @@ package com.willfp.ecoenchants.effects;
 
 import com.willfp.eco.core.Prerequisite;
 import com.willfp.eco.core.events.ArmorChangeEvent;
-import com.willfp.ecoenchants.enchantments.EcoEnchant;
 import com.willfp.ecoenchants.enchantments.meta.EnchantmentType;
-import com.willfp.ecoenchants.enchantments.util.EnchantChecks;
 import org.bukkit.entity.Player;
 import org.bukkit.event.EventHandler;
 import org.bukkit.potion.PotionEffect;

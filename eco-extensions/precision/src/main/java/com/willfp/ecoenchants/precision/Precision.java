@@ -1,9 +1,6 @@
 package com.willfp.ecoenchants.precision;
 
-import com.willfp.ecoenchants.enchantments.EcoEnchant;
-import com.willfp.ecoenchants.enchantments.EcoEnchants;
 import com.willfp.ecoenchants.enchantments.meta.EnchantmentType;
-import com.willfp.ecoenchants.enchantments.util.EnchantChecks;
 import org.bukkit.GameMode;
 import org.bukkit.entity.Enderman;
 import org.bukkit.entity.LivingEntity;

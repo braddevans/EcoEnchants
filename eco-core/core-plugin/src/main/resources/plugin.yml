@@ -1,6 +1,6 @@
 name: EcoEnchants
 version: ${projectVersion}
-main: com.willfp.ecoenchants.EcoEnchantsPlugin
+main: com.willfp.ecoenchants.EcoEnchantsPluginImpl
 api-version: 1.16
 authors: [ Auxilor ]
 website: willfp.com

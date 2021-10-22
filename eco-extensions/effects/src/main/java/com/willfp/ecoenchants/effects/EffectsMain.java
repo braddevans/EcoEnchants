@@ -7,7 +7,6 @@ import com.willfp.ecoenchants.effects.enchants.NightVision;
 import com.willfp.ecoenchants.effects.enchants.Regeneration;
 import com.willfp.ecoenchants.effects.enchants.Speed;
 import com.willfp.ecoenchants.effects.enchants.WaterBreathing;
-import com.willfp.ecoenchants.enchantments.EcoEnchant;
 import org.jetbrains.annotations.NotNull;
 
 public class EffectsMain extends Extension {

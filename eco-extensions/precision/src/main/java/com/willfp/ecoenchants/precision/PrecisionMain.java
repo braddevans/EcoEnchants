@@ -2,7 +2,6 @@ package com.willfp.ecoenchants.precision;
 
 import com.willfp.eco.core.EcoPlugin;
 import com.willfp.eco.core.extensions.Extension;
-import com.willfp.ecoenchants.enchantments.EcoEnchant;
 import org.jetbrains.annotations.NotNull;
 
 public class PrecisionMain extends Extension {

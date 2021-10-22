@@ -1,2 +1,10 @@
 group 'com.willfp'
 version rootProject.version
+
+subprojects {
+    apply plugin: 'kotlin'
+
+    dependencies {
+        compileOnly project(":eco-api")
+    }
+}

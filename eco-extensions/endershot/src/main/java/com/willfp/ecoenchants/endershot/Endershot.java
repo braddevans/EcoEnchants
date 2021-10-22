@@ -1,10 +1,7 @@
 package com.willfp.ecoenchants.endershot;
 
 import com.willfp.eco.core.integrations.mcmmo.McmmoManager;
-import com.willfp.ecoenchants.enchantments.EcoEnchant;
-import com.willfp.ecoenchants.enchantments.EcoEnchants;
 import com.willfp.ecoenchants.enchantments.meta.EnchantmentType;
-import com.willfp.ecoenchants.enchantments.util.EnchantChecks;
 import org.bukkit.GameMode;
 import org.bukkit.Material;
 import org.bukkit.Sound;

@@ -1,0 +1,45 @@
+plugins {
+    id 'com.github.johnrengelman.shadow'
+}
+
+group 'com.willfp'
+version rootProject.version
+
+dependencies {
+    // Adventure
+    compileOnly 'net.kyori:adventure-platform-bukkit:4.0.0'
+    compileOnly 'net.kyori:adventure-text-minimessage:4.1.0-SNAPSHOT'
+    compileOnly 'net.kyori:adventure-api:4.9.1'
+    compileOnly 'net.kyori:adventure-text-serializer-gson:4.9.2'
+    compileOnly 'net.kyori:adventure-text-serializer-legacy:4.8.1'
+
+    // Other
+    compileOnly 'io.papermc.paper:paper-api:1.17.1-R0.1-SNAPSHOT'
+}
+
+java {
+    withJavadocJar()
+}
+
+
+build.dependsOn publishToMavenLocal
+
+publishing {
+    publications {
+        shadow(MavenPublication) {
+            from components.java
+            artifactId 'EcoEnchants'
+        }
+    }
+
+    repositories {
+        maven {
+            name = "GitHubPackages"
+            url = uri("https://maven.pkg.github.com/Auxilor/EcoEnchants")
+            credentials {
+                username = System.getenv("GITHUB_ACTOR")
+                password = System.getenv("GITHUB_TOKEN")
+            }
+        }
+    }
+}

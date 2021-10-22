@@ -2,7 +2,7 @@ package com.willfp.ecoenchants.command;
 
 import com.willfp.eco.core.command.CommandHandler;
 import com.willfp.eco.core.command.impl.Subcommand;
-import com.willfp.ecoenchants.EcoEnchantsPlugin;
+import com.willfp.ecoenchants.EcoEnchantsPluginImpl;
 import org.jetbrains.annotations.NotNull;
 
 public class CommandReload extends Subcommand {
@@ -11,7 +11,7 @@ public class CommandReload extends Subcommand {
      *
      * @param plugin The plugin for the commands to listen for.
      */
-    public CommandReload(@NotNull final EcoEnchantsPlugin plugin) {
+    public CommandReload(@NotNull final EcoEnchantsPluginImpl plugin) {
         super(plugin, "reload", "ecoenchants.command.reload", false);
     }
 

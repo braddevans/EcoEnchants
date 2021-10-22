@@ -1,13 +1,10 @@
 package com.willfp.ecoenchants.enchantments.support.obtaining;
 
-import com.google.common.collect.ImmutableSet;
 import com.willfp.eco.core.EcoPlugin;
 import com.willfp.eco.core.PluginDependent;
 import com.willfp.eco.core.config.updating.ConfigUpdater;
 import com.willfp.eco.util.NumberUtils;
-import com.willfp.ecoenchants.EcoEnchantsPlugin;
-import com.willfp.ecoenchants.enchantments.EcoEnchant;
-import com.willfp.ecoenchants.enchantments.EcoEnchants;
+import com.willfp.ecoenchants.EcoEnchantsPluginImpl;
 import com.willfp.ecoenchants.enchantments.meta.EnchantmentTarget;
 import com.willfp.ecoenchants.enchantments.meta.EnchantmentType;
 import org.bukkit.Color;
@@ -32,7 +29,6 @@ import java.util.ArrayList;
 import java.util.Collections;
 import java.util.HashMap;
 import java.util.HashSet;
-import java.util.Locale;
 import java.util.Map;
 import java.util.Set;
 import java.util.concurrent.atomic.AtomicBoolean;
@@ -58,7 +54,7 @@ public class EnchantingListeners extends PluginDependent<EcoPlugin> implements L
     }
 
     @ConfigUpdater
-    public static void update(@NotNull final EcoEnchantsPlugin plugin) {
+    public static void update(@NotNull final EcoEnchantsPluginImpl plugin) {
         SECONDARY_ENCHANTABLE.clear();
         for (String string : plugin.getTargetYml().getStrings("extra-enchantable-items", false)) {
             SECONDARY_ENCHANTABLE.add(Material.matchMaterial(string.toUpperCase()));

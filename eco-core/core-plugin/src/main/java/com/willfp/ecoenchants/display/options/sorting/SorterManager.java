@@ -1,6 +1,6 @@
 package com.willfp.ecoenchants.display.options.sorting;
 
-import com.willfp.ecoenchants.EcoEnchantsPlugin;
+import com.willfp.ecoenchants.EcoEnchantsPluginImpl;
 import com.willfp.ecoenchants.display.options.sorting.implementations.AlphabeticSorter;
 import com.willfp.ecoenchants.display.options.sorting.implementations.LengthSorter;
 import com.willfp.ecoenchants.display.options.sorting.implementations.RarityAlphabeticSorter;
@@ -24,7 +24,7 @@ public class SorterManager {
     private static final Set<EnchantmentSorter> REGISTERED = new HashSet<>();
 
     static {
-        EcoEnchantsPlugin instance = EcoEnchantsPlugin.getInstance(); // Really dirty and janky.
+        EcoEnchantsPluginImpl instance = EcoEnchantsPluginImpl.getInstance(); // Really dirty and janky.
         REGISTERED.add(new AlphabeticSorter(instance));
         REGISTERED.add(new LengthSorter(instance));
         REGISTERED.add(new TypeAlphabeticSorter(instance));
@@ -47,6 +47,6 @@ public class SorterManager {
         return REGISTERED.stream()
                 .filter(enchantmentSorter -> Arrays.asList(enchantmentSorter.getParameters()).containsAll(Arrays.asList(parameters)) && enchantmentSorter.getParameters().length == parameters.length)
                 .findFirst()
-                .orElse(new AlphabeticSorter(EcoEnchantsPlugin.getInstance()));
+                .orElse(new AlphabeticSorter(EcoEnchantsPluginImpl.getInstance()));
     }
 }

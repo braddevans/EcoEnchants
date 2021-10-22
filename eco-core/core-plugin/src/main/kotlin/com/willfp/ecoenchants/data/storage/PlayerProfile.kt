@@ -1,6 +1,6 @@
 package com.willfp.ecoenchants.data.storage
 
-import com.willfp.ecoenchants.EcoEnchantsPlugin
+import com.willfp.ecoenchants.EcoEnchantsPluginImpl
 import org.bukkit.OfflinePlayer
 import java.util.*
 
@@ -17,7 +17,7 @@ class PlayerProfile private constructor(
     }
 
     companion object {
-        private val handler = EcoEnchantsPlugin.getInstance().dataHandler
+        private val handler = EcoEnchantsPluginImpl.getInstance().dataHandler
         private val loaded = mutableMapOf<UUID, PlayerProfile>()
         private val keys = mutableMapOf<String, Type>()
 
@@ -59,7 +59,7 @@ class PlayerProfile private constructor(
             }
 
             if (async) {
-                EcoEnchantsPlugin.getInstance().scheduler.runAsync(saver)
+                EcoEnchantsPluginImpl.getInstance().scheduler.runAsync(saver)
             } else {
                 saver.invoke()
             }

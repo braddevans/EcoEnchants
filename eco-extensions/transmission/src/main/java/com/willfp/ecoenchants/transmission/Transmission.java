@@ -1,7 +1,6 @@
 package com.willfp.ecoenchants.transmission;
 
 
-import com.willfp.ecoenchants.enchantments.EcoEnchants;
 import com.willfp.ecoenchants.enchantments.itemtypes.Spell;
 import org.bukkit.Location;
 import org.bukkit.entity.Player;

@@ -3,9 +3,7 @@ package com.willfp.ecoenchants.command;
 import com.willfp.eco.core.command.CommandHandler;
 import com.willfp.eco.core.command.impl.Subcommand;
 import com.willfp.eco.core.web.Paste;
-import com.willfp.ecoenchants.EcoEnchantsPlugin;
-import com.willfp.ecoenchants.enchantments.EcoEnchant;
-import com.willfp.ecoenchants.enchantments.EcoEnchants;
+import com.willfp.ecoenchants.EcoEnchantsPluginImpl;
 import org.bukkit.configuration.file.YamlConfiguration;
 import org.jetbrains.annotations.NotNull;
 
@@ -17,7 +15,7 @@ public class CommandLocaleExport extends Subcommand {
      *
      * @param plugin The plugin for the commands to listen for.
      */
-    public CommandLocaleExport(@NotNull final EcoEnchantsPlugin plugin) {
+    public CommandLocaleExport(@NotNull final EcoEnchantsPluginImpl plugin) {
         super(plugin, "export", "ecoenchants.command.locale.export", false);
     }
 

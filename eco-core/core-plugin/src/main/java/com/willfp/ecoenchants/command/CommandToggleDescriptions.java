@@ -2,7 +2,7 @@ package com.willfp.ecoenchants.command;
 
 import com.willfp.eco.core.command.CommandHandler;
 import com.willfp.eco.core.command.impl.Subcommand;
-import com.willfp.ecoenchants.EcoEnchantsPlugin;
+import com.willfp.ecoenchants.EcoEnchantsPluginImpl;
 import com.willfp.ecoenchants.data.storage.PlayerProfile;
 import org.bukkit.entity.Player;
 import org.jetbrains.annotations.NotNull;
@@ -13,14 +13,14 @@ public class CommandToggleDescriptions extends Subcommand {
      *
      * @param plugin The plugin for the commands to listen for.
      */
-    public CommandToggleDescriptions(@NotNull final EcoEnchantsPlugin plugin) {
+    public CommandToggleDescriptions(@NotNull final EcoEnchantsPluginImpl plugin) {
         super(plugin, "toggledescriptions", "ecoenchants.command.toggledescriptions", true);
     }
 
     @Override
     public CommandHandler getHandler() {
         return (sender, args) -> {
-            if (!((EcoEnchantsPlugin) this.getPlugin()).getDisplayModule().getOptions().getDescriptionOptions().isEnabled()) {
+            if (!((EcoEnchantsPluginImpl) this.getPlugin()).getDisplayModule().getOptions().getDescriptionOptions().isEnabled()) {
                 sender.sendMessage(this.getPlugin().getLangYml().getMessage("descriptions-disabled"));
                 return;
             }

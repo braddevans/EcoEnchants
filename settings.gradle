@@ -1,5 +1,8 @@
 rootProject.name = 'EcoEnchants'
 
+// Api
+include ':eco-api'
+
 // Core
 include ':eco-core'
 include ':eco-core:core-nms'

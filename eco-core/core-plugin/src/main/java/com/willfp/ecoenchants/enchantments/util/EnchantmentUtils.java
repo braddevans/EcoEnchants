@@ -6,7 +6,7 @@ import com.willfp.eco.core.integrations.placeholder.PlaceholderManager;
 import com.willfp.eco.util.BlockUtils;
 import com.willfp.eco.util.NumberUtils;
 import com.willfp.eco.util.StringUtils;
-import com.willfp.ecoenchants.EcoEnchantsPlugin;
+import com.willfp.ecoenchants.EcoEnchantsPluginImpl;
 import com.willfp.ecoenchants.enchantments.EcoEnchant;
 import com.willfp.ecoenchants.enchantments.EcoEnchants;
 import lombok.experimental.UtilityClass;
@@ -128,7 +128,7 @@ public class EnchantmentUtils {
             }
 
             if (enchantment instanceof EcoEnchant) {
-                if (EcoEnchantsPlugin.getInstance().getConfigYml().getBool("advanced.dual-registration.enabled")) {
+                if (EcoEnchantsPluginImpl.getInstance().getConfigYml().getBool("advanced.dual-registration.enabled")) {
                     byName.put(((EcoEnchant) enchantment).getDisplayName(), enchantment);
                 }
             }

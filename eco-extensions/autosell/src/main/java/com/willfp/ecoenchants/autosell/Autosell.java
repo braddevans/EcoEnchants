@@ -3,9 +3,7 @@ package com.willfp.ecoenchants.autosell;
 
 import com.willfp.eco.core.drops.DropQueue;
 import com.willfp.eco.core.integrations.antigrief.AntigriefManager;
-import com.willfp.ecoenchants.enchantments.EcoEnchant;
 import com.willfp.ecoenchants.enchantments.meta.EnchantmentType;
-import com.willfp.ecoenchants.enchantments.util.EnchantChecks;
 import net.brcdev.shopgui.ShopGuiPlusApi;
 import org.bukkit.GameMode;
 import org.bukkit.block.Block;

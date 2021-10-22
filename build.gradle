@@ -17,6 +17,7 @@ plugins {
 }
 
 dependencies {
+    implementation project(":eco-api")
     implementation project(":eco-core").getSubprojects()
 }
 
@@ -24,7 +25,6 @@ allprojects {
     apply plugin: 'java'
     apply plugin: 'maven-publish'
     apply plugin: 'com.github.johnrengelman.shadow'
-    apply plugin: 'kotlin'
 
     repositories {
         mavenCentral()
@@ -113,11 +113,3 @@ version = findProperty("version")
 java.sourceCompatibility = JavaVersion.VERSION_16
 
 compileJava.options.encoding = 'UTF-8'
-
-publishing {
-    publications {
-        maven(MavenPublication) {
-            from(components.java)
-        }
-    }
-}

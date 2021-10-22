@@ -1,6 +1,6 @@
 package com.willfp.ecoenchants.enchantments.support.vanilla;
 
-import com.willfp.ecoenchants.EcoEnchantsPlugin;
+import com.willfp.ecoenchants.EcoEnchantsPluginImpl;
 import com.willfp.ecoenchants.proxy.proxies.EcoCraftEnchantmentManagerProxy;
 import lombok.experimental.UtilityClass;
 import org.bukkit.NamespacedKey;
@@ -36,7 +36,7 @@ public class VanillaEnchantments {
      *
      * @param plugin Instance of EcoEnchants.
      */
-    public static void update(@NotNull final EcoEnchantsPlugin plugin) {
+    public static void update(@NotNull final EcoEnchantsPluginImpl plugin) {
         Map<Enchantment, VanillaEnchantmentMetadata> map = new HashMap<>();
 
         List<Enchantment> enchantments = Arrays.stream(Enchantment.values())

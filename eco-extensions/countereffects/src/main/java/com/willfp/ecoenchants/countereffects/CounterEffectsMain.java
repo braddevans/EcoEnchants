@@ -7,7 +7,6 @@ import com.willfp.ecoenchants.countereffects.enchants.Apothecary;
 import com.willfp.ecoenchants.countereffects.enchants.Resolve;
 import com.willfp.ecoenchants.countereffects.enchants.Vigor;
 import com.willfp.ecoenchants.countereffects.enchants.Vivacity;
-import com.willfp.ecoenchants.enchantments.EcoEnchant;
 import org.jetbrains.annotations.NotNull;
 
 public class CounterEffectsMain extends Extension {

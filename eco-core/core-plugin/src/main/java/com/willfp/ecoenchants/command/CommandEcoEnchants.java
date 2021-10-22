@@ -2,7 +2,7 @@ package com.willfp.ecoenchants.command;
 
 import com.willfp.eco.core.command.CommandHandler;
 import com.willfp.eco.core.command.impl.PluginCommand;
-import com.willfp.ecoenchants.EcoEnchantsPlugin;
+import com.willfp.ecoenchants.EcoEnchantsPluginImpl;
 import org.jetbrains.annotations.NotNull;
 
 public class CommandEcoEnchants extends PluginCommand {
@@ -11,7 +11,7 @@ public class CommandEcoEnchants extends PluginCommand {
      *
      * @param plugin The plugin for the commands to listen for.
      */
-    public CommandEcoEnchants(@NotNull final EcoEnchantsPlugin plugin) {
+    public CommandEcoEnchants(@NotNull final EcoEnchantsPluginImpl plugin) {
         super(plugin, "ecoenchants", "ecoenchants.command.ecoenchants", false);
 
         this.addSubcommand(new CommandDebug(plugin))

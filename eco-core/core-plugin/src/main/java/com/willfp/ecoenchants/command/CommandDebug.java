@@ -5,10 +5,8 @@ import com.comphenix.protocol.events.ListenerPriority;
 import com.willfp.eco.core.command.CommandHandler;
 import com.willfp.eco.core.command.impl.Subcommand;
 import com.willfp.eco.core.proxy.ProxyConstants;
-import com.willfp.ecoenchants.EcoEnchantsPlugin;
+import com.willfp.ecoenchants.EcoEnchantsPluginImpl;
 import com.willfp.ecoenchants.display.EnchantmentCache;
-import com.willfp.ecoenchants.enchantments.EcoEnchant;
-import com.willfp.ecoenchants.enchantments.EcoEnchants;
 import org.bukkit.Bukkit;
 import org.bukkit.enchantments.Enchantment;
 import org.bukkit.entity.Player;
@@ -32,7 +30,7 @@ public class CommandDebug extends Subcommand {
      *
      * @param plugin The plugin for the commands to listen for.
      */
-    public CommandDebug(@NotNull final EcoEnchantsPlugin plugin) {
+    public CommandDebug(@NotNull final EcoEnchantsPluginImpl plugin) {
         super(plugin, "debug", "ecoenchants.command.debug", false);
     }
 

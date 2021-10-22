@@ -12,7 +12,6 @@ import com.willfp.ecoenchants.biomes.enchants.offensive.Aquamarine;
 import com.willfp.ecoenchants.biomes.enchants.offensive.Dehydration;
 import com.willfp.ecoenchants.biomes.enchants.offensive.Icelord;
 import com.willfp.ecoenchants.biomes.enchants.offensive.Rainforest;
-import com.willfp.ecoenchants.enchantments.EcoEnchant;
 import org.jetbrains.annotations.NotNull;
 
 public class BiomesMain extends Extension {

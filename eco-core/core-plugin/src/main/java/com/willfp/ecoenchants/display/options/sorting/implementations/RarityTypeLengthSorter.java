@@ -1,7 +1,7 @@
 package com.willfp.ecoenchants.display.options.sorting.implementations;
 
 import com.willfp.eco.core.PluginDependent;
-import com.willfp.ecoenchants.EcoEnchantsPlugin;
+import com.willfp.ecoenchants.EcoEnchantsPluginImpl;
 import com.willfp.ecoenchants.display.EnchantmentCache;
 import com.willfp.ecoenchants.display.options.sorting.EnchantmentSorter;
 import com.willfp.ecoenchants.display.options.sorting.SortParameters;
@@ -12,13 +12,13 @@ import java.util.ArrayList;
 import java.util.Comparator;
 import java.util.List;
 
-public class RarityTypeLengthSorter extends PluginDependent<EcoEnchantsPlugin> implements EnchantmentSorter {
+public class RarityTypeLengthSorter extends PluginDependent<EcoEnchantsPluginImpl> implements EnchantmentSorter {
     /**
      * Instantiate sorter.
      *
      * @param plugin Instance of EcoEnchants.
      */
-    public RarityTypeLengthSorter(@NotNull final EcoEnchantsPlugin plugin) {
+    public RarityTypeLengthSorter(@NotNull final EcoEnchantsPluginImpl plugin) {
         super(plugin);
     }
 

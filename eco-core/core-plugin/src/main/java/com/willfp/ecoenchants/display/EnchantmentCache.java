@@ -6,6 +6,7 @@ import com.willfp.eco.core.display.Display;
 import com.willfp.eco.util.NumberUtils;
 import com.willfp.eco.util.StringUtils;
 import com.willfp.ecoenchants.EcoEnchantsPlugin;
+import com.willfp.ecoenchants.EcoEnchantsPluginImpl;
 import com.willfp.ecoenchants.display.options.NumbersOptions;
 import com.willfp.ecoenchants.enchantments.EcoEnchant;
 import com.willfp.ecoenchants.enchantments.meta.EnchantmentRarity;
@@ -22,7 +23,6 @@ import org.bukkit.entity.Player;
 import org.jetbrains.annotations.NotNull;
 import org.jetbrains.annotations.Nullable;
 
-import javax.swing.border.MatteBorder;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.Collections;
@@ -36,7 +36,7 @@ public class EnchantmentCache {
     /**
      * Instance of EcoEnchants.
      */
-    public static final EcoEnchantsPlugin PLUGIN = EcoEnchantsPlugin.getInstance();
+    private static final EcoEnchantsPluginImpl PLUGIN = (EcoEnchantsPluginImpl) EcoEnchantsPlugin.getInstance();
 
     /**
      * The physical cache.

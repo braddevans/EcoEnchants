@@ -2,7 +2,6 @@ package com.willfp.ecoenchants.endershot;
 
 import com.willfp.eco.core.EcoPlugin;
 import com.willfp.eco.core.extensions.Extension;
-import com.willfp.ecoenchants.enchantments.EcoEnchant;
 import org.jetbrains.annotations.NotNull;
 
 public class EndershotMain extends Extension {

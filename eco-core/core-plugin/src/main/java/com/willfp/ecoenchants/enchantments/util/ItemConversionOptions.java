@@ -1,7 +1,7 @@
 package com.willfp.ecoenchants.enchantments.util;
 
 import com.willfp.eco.core.EcoPlugin;
-import com.willfp.ecoenchants.EcoEnchantsPlugin;
+import com.willfp.ecoenchants.EcoEnchantsPluginImpl;
 import lombok.Getter;
 import lombok.experimental.UtilityClass;
 import org.jetbrains.annotations.NotNull;
@@ -94,6 +94,6 @@ public class ItemConversionOptions {
     }
 
     static {
-        reload(EcoEnchantsPlugin.getInstance());
+        reload(EcoEnchantsPluginImpl.getInstance());
     }
 }

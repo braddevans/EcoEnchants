@@ -2,7 +2,6 @@ package com.willfp.ecoenchants.summoning;
 
 import com.willfp.eco.core.EcoPlugin;
 import com.willfp.eco.core.extensions.Extension;
-import com.willfp.ecoenchants.enchantments.EcoEnchant;
 import com.willfp.ecoenchants.summoning.enchants.Crawler;
 import com.willfp.ecoenchants.summoning.enchants.Firestorm;
 import com.willfp.ecoenchants.summoning.enchants.Ghoul;

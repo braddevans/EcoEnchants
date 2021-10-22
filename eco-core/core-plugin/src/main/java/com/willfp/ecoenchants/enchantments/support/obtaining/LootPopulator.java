@@ -1,9 +1,7 @@
 package com.willfp.ecoenchants.enchantments.support.obtaining;
 
 import com.willfp.eco.util.NumberUtils;
-import com.willfp.ecoenchants.EcoEnchantsPlugin;
-import com.willfp.ecoenchants.enchantments.EcoEnchant;
-import com.willfp.ecoenchants.enchantments.EcoEnchants;
+import com.willfp.ecoenchants.EcoEnchantsPluginImpl;
 import com.willfp.ecoenchants.enchantments.meta.EnchantmentTarget;
 import com.willfp.ecoenchants.enchantments.meta.EnchantmentType;
 import org.bukkit.Chunk;
@@ -32,14 +30,14 @@ public class LootPopulator extends BlockPopulator {
     /**
      * Instance of ecoenchants.
      */
-    private final EcoEnchantsPlugin plugin;
+    private final EcoEnchantsPluginImpl plugin;
 
     /**
      * Create a new loot populator.
      *
      * @param plugin The plugin.
      */
-    public LootPopulator(@NotNull final EcoEnchantsPlugin plugin) {
+    public LootPopulator(@NotNull final EcoEnchantsPluginImpl plugin) {
         this.plugin = plugin;
     }
 

@@ -1,7 +1,6 @@
 package com.willfp.ecoenchants.xray;
 
 import com.willfp.eco.util.TeamUtils;
-import com.willfp.ecoenchants.enchantments.EcoEnchants;
 import com.willfp.ecoenchants.enchantments.itemtypes.Spell;
 import org.bukkit.Bukkit;
 import org.bukkit.Location;

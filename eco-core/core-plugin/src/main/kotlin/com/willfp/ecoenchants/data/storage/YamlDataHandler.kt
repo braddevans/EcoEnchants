@@ -1,12 +1,12 @@
 package com.willfp.ecoenchants.data.storage
 
 import com.willfp.eco.core.config.yaml.YamlBaseConfig
-import com.willfp.ecoenchants.EcoEnchantsPlugin
+import com.willfp.ecoenchants.EcoEnchantsPluginImpl
 import java.util.*
 
 @Suppress("UNCHECKED_CAST")
 class YamlDataHandler(
-    plugin: EcoEnchantsPlugin
+    plugin: EcoEnchantsPluginImpl
 ) : DataHandler {
     private val dataYml = DataYml(plugin)
 
@@ -23,7 +23,7 @@ class YamlDataHandler(
     }
 
     class DataYml(
-        plugin: EcoEnchantsPlugin
+        plugin: EcoEnchantsPluginImpl
     ) : YamlBaseConfig(
         "data",
         false,

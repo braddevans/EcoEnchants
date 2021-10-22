@@ -1,7 +1,6 @@
 package com.willfp.ecoenchants.firewand;
 
 
-import com.willfp.ecoenchants.enchantments.EcoEnchants;
 import com.willfp.ecoenchants.enchantments.itemtypes.Spell;
 import org.bukkit.entity.Player;
 import org.bukkit.entity.SmallFireball;

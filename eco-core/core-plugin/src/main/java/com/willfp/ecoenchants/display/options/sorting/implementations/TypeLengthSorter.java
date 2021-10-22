@@ -1,7 +1,7 @@
 package com.willfp.ecoenchants.display.options.sorting.implementations;
 
 import com.willfp.eco.core.PluginDependent;
-import com.willfp.ecoenchants.EcoEnchantsPlugin;
+import com.willfp.ecoenchants.EcoEnchantsPluginImpl;
 import com.willfp.ecoenchants.display.EnchantmentCache;
 import com.willfp.ecoenchants.display.options.sorting.EnchantmentSorter;
 import com.willfp.ecoenchants.display.options.sorting.SortParameters;
@@ -11,13 +11,13 @@ import org.jetbrains.annotations.NotNull;
 import java.util.ArrayList;
 import java.util.List;
 
-public class TypeLengthSorter extends PluginDependent<EcoEnchantsPlugin> implements EnchantmentSorter {
+public class TypeLengthSorter extends PluginDependent<EcoEnchantsPluginImpl> implements EnchantmentSorter {
     /**
      * Instantiate sorter.
      *
      * @param plugin Instance of EcoEnchants.
      */
-    public TypeLengthSorter(@NotNull final EcoEnchantsPlugin plugin) {
+    public TypeLengthSorter(@NotNull final EcoEnchantsPluginImpl plugin) {
         super(plugin);
     }
 

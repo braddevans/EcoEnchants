@@ -1,12 +1,12 @@
 package com.willfp.ecoenchants.data
 
-import com.willfp.ecoenchants.EcoEnchantsPlugin
+import com.willfp.ecoenchants.EcoEnchantsPluginImpl
 import com.willfp.ecoenchants.data.storage.PlayerProfile
 import org.bukkit.Bukkit
 
 class SaveHandler {
     companion object {
-        fun save(plugin: EcoEnchantsPlugin) {
+        fun save(plugin: EcoEnchantsPluginImpl) {
             if (Bukkit.getOnlinePlayers().isEmpty()) {
                 return
             }
@@ -21,7 +21,7 @@ class SaveHandler {
     }
 
     class Runnable(
-        private val plugin: EcoEnchantsPlugin
+        private val plugin: EcoEnchantsPluginImpl
     ) : java.lang.Runnable {
         override fun run() {
             save(plugin)
